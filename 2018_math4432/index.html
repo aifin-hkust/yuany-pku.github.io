@@ -1,0 +1,1242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+
+   <META http-equiv=Content-Type content="text/html; charset=gb2312">
+
+   <title>Math4432: Statistical Learning </title>
+
+</head>
+
+<body background="../images/crysback.jpg">
+
+
+
+
+<!-- PAGE HEADER -->
+
+
+
+
+<div class="Section1">
+
+<table border="0" cellpadding="0" width="100%" style="width: 100%;">
+
+      <tbody>
+
+        <tr>
+
+
+
+
+       <td style="padding: 0.75pt;" width="80" align="center">
+
+
+
+
+      <p class="MsoNormal">&nbsp;<img width="64"
+
+ id="_x0000_i1025"
+
+ src="../images/HKUST_logo.jpg" alt="HKUST">
+
+          </p>
+
+       </td>
+
+       <td style="padding: 0.75pt;">
+
+      <p>
+
+<span style="font-size: 18pt;">
+
+<b><big>Math4432: Statistical Machine Learning (&#32479;&#35745;&#23398;&#20064;)<br>
+
+   Spring 2018, HKUST</big></b>
+
+<br>
+
+</p>
+
+</td>
+
+</tr>
+
+
+
+
+</tbody>
+
+</table>
+
+
+
+
+<div class="MsoNormal" align="center" style="text-align: center;">
+
+<hr size="2" width="100%" align="center">  </div>
+
+
+
+
+<ul type="disc">
+
+
+
+
+</ul>
+
+
+
+
+<!-- COURSE INFORMATION BANNER -->
+
+
+
+
+<table border="0" cellpadding="0" width="100%" bgcolor="#990000"
+
+ style="background: rgb(153,0,0) none repeat scroll 0% 50%; width: 100%;">
+
+      <tbody>
+
+
+
+
+        <tr>
+
+       <td style="padding: 2.25pt;">
+
+      <p class="MsoNormal"><b><span
+
+ style="font-size: 13.5pt; color: white;">Course Information</span></b></p>
+
+       </td>
+
+      </tr>
+
+
+
+
+  </tbody>
+
+</table>
+
+
+
+
+<!-- COURSE INFORMATION -->
+
+
+
+
+<!-- PKU style pictures
+
+
+
+<p style="margin-left: 0.5in;">
+
+<img height="200" src="boya_starry.png">
+
+<img height="200" src="boya_wreck.png">
+
+<img height="200" src="boya_twilight.png">
+
+</p>
+
+
+
+-->
+
+
+
+
+<h3>Synopsis (&#25688;&#35201;)</h3>
+
+<p style="margin-left: 0.5in;">
+
+<big> This course is open to graduates and senior undergraduates in applied mathematics, statistics, and engineering who are interested in learning from data.
+
+It covers hot topics in statistical learning, also known as machine learning, featured with various in-class projects in computer vision, pattern recognition, computational advertisement,
+
+bioinformatics, and social networks, etc. An emphasis this year is on deep learning with convolutional neural networks.
+
+<br>
+
+Prerequisite: linear algebra, basic probability and multivariate statistics, convex optimization; familiarity with R, Matlab, and/or Python, Torch for deep learning, etc.
+
+</big>
+
+</p>
+
+
+
+
+<h3>Reference (&#21442;&#32771;&#25945;&#26448;)</h3>
+
+	
+
+	<p style="margin-left: 0.5in;">
+
+	<big>
+
+		<em> <a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning, with applications in R.</a> By James, Witten, Hastie, and Tibshirani </em>
+
+	</big>
+
+	</p>
+
+	
+
+	<p style="margin-left: 0.5in;">
+
+	<big>
+
+		<em> <a href="https://github.com/JWarmenhoven/ISLR-python/">ISLR-python, By Jordi Warmenhoven</a>. </em>
+
+	</big>
+
+	</p>
+
+	
+
+	<p style="margin-left: 0.5in;">
+
+	<big>
+
+		<em> <a href="https://github.com/mscaudill/IntroStatLearn">ISLR-Python: Labs and Applied, by Matt Caudill</a>. </em>
+
+	</big>
+
+	</p>
+
+	
+
+
+
+
+<p style="margin-left: 0.5in;">
+
+<big>
+
+<em> <a href="http://www-stat.stanford.edu/~hastie/ElemStatLearn/">The Elements of Statistical Learning.</a> 2nd Ed. By Hastie, Tibshirani, and Friedman </em>
+
+</big>
+
+</p>
+
+	
+
+	<p style="margin-left: 0.5in;">
+
+	<big>
+
+	<em> <a href="https://github.com/sujitpal/statlearning-notebooks">statlearning-notebooks</a>, by Sujit Pal, Python implementations of the R labs for the <a href="https://lagunita.stanford.edu/courses/HumanitiesScience/StatLearning/Winter2014/about">StatLearning: Statistical Learning</a> online course from Stanford taught by Profs Trevor Hastie and Rob Tibshirani.</em>
+
+	</big>
+
+	</p>
+
+
+
+
+<h3>Instructors: </h3>
+
+<p style="margin-left: 0.5in;">
+
+<big>
+
+<em><a href="http://www.math.pku.edu.cn/teachers/yaoy/">Yuan Yao</a>  </em>
+
+</big>
+
+</p>
+
+
+
+
+<h3>Time and Venue:</h3>
+
+<p style="margin-left: 0.5in;">
+
+<big><em>TuTh 4:30-5:50pm</em> <br>
+
+<em>Rm4504 (Lift 25/26), Academic Bldg</em> <br>
+
+	<em> Piazza discussion forum: <a href="https://piazza.com/ust.hk/spring2018/math4432"> sign-up link </a> </em>
+
+</big>
+
+</p>
+
+
+
+
+<h3>Homework and Projects:</h3>
+
+
+
+
+<p style="margin-left: 0.5in;">
+
+<big><em>Weekly homeworks, monthly mini-projects, and a final major project. No final exam. For 3-project plan, homework and projects will be counted in grading by 20-20-20-40 in percentage. </em>
+
+</big></p>
+
+
+
+
+<h3>Teaching Assistant (&#21161;&#25945;):</h3>
+
+
+
+
+<p style="margin-left: 0.5in;">
+
+<big>Mr. ZHU, Weizhi, Email:<em>  statml.hw (add "AT gmail DOT com" afterwards) </em>
+
+</big>
+
+</p>
+
+<p style="margin-left: 0.5in;">
+
+	<big><em> <a href="https://github.com/zhuwzh/MATH4432-Tutorial"> Tutorial Material </a> </em>
+
+</big>
+
+</p>	
+
+	
+
+				
+
+<h3>Schedule (&#26102;&#38388;&#34920;)</h3>
+
+
+
+
+
+
+
+<table border="1" cellspacing="0">
+
+		<tbody>
+
+
+
+
+<tr>
+
+<td align="left"><strong>Date</strong></td>
+
+<td align="left"><strong>Topic</strong></td>
+
+<td align="left"><strong>Instructor</strong></td>
+
+<td align="left"><strong>Scriber</strong></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>02/01/2018, Thu </td>
+
+<td>Lecture 01: Introduction and Overview <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Lecture01.pdf"> [ Lecture01.pdf ] </a> <br>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>02/06/2018, Thu </td>
+
+<td>Lecture 02: Linear Regression <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Lecture02.pdf"> [ Lecture02.pdf ] </a>: the slides may be slightly above that of ISLR <br>
+
+<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 2: 1, 3, 8, 10. Deadline: Feb 20, 2018. Please submit your homework to the Email address above (statml.hw) before class, including source codes (or link) if necessary. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".</li>
+
+	</ul>
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>
+
+<td>02/08/2018, Thu </td>
+
+<td>Lecture 03: Linear Regression B<a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Lecture03.pdf"> [ Lecture03.pdf ] </a> <br>
+
+<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 3: 1, 5, 8, 9. Deadline: Feb 20, 2018. Please submit your homework to the Email address above (statml.hw) before class, including source codes (or link) if necessary. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".</li>
+
+	</ul>
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>	
+
+<td>02/13/2018, Tue </td>
+
+<td>Lecture 04: Linear Classification A: Logistic Regression <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch4slide.pdf"> [ Lecture04 ] </a>: logistic regression <br>
+
+	</td>
+
+<td>Prof. Can YANG</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>
+
+<td>02/15/2018, Thu </td>
+
+	<td>Lecture will be rescheduled to another date, to be announced later<br></td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+			
+
+<tr>
+
+<td>02/20/2018, Tue</td>
+
+<td>Lecture 05: Linear Classification B: LDA, QDA etc. <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch4slide.pdf">[ Lecture05 ]</a>
+
+	<br>
+
+<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 4: 1-3, 10, 11, and Bonus question 4* (You don't need to work on it; but if you work on it, bonus credit will be given to you). Deadline: Feb 27, 2018. Please submit your homework to the Email address above (statml.hw) before class, including source codes (or link) if necessary. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".</li>
+
+	</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+<tr>	
+
+<td>02/22/2018, Thu </td>
+
+<td>Lecture 06: Resampling A: Cross-Validation <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch5slide.pdf"> [ slides ] </a> <br>
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+<tr>	
+
+<td>02/27/2018, Thu </td>
+
+<td>Lecture 07: Resampling B: Bootstrap <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch5slide.pdf"> [ slides ] </a> <br>
+
+	<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 5: 1, 2, 5, 6, and Bonus question 8* (You don't need to work on it; but if you work on it, bonus credit will be given to you). Deadline: Mar 6, 2018. Please submit your homework to the Email address above (statml.hw) before class, including source codes (or link) if necessary. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".</li>
+
+	</ul>
+
+	</td>
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>	
+
+<td>03/01/2018, Thu </td>
+
+<td>Lecture 08: Mini-Project 1: A Warmup  <br>
+
+	<br>
+
+	<ul> [Project 1]	
+
+		<li>Project description: <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/project1.pdf"> [ project1.pdf ] </a></li>
+
+		<li>Collection of Reports for Project 1: <a href="https://github.com/yuany-pku/2018_math4432/blob/master/project1/">[ GitHub ]</a> </li>	
+
+	</ul>
+
+
+
+
+	</td>
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+<tr>	
+
+<td>03/06/2018, Tue </td>
+
+<td>Lecture 09: Linear Model Selection: Subset/Forward/Backward selection, adjusted R-square, AIC, and BIC <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch6slide.pdf"> [ slides ] </a> <br>
+
+	</td>
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>	
+
+<td>03/08/2018, Thu </td>
+
+<td>Lecture 10: Linear Model Selection: Ridge and Lasso <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch6slide.pdf"> [ slides ] </a> <br>
+
+	</td>
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>	
+
+<td>03/13/2018, Tue </td>
+
+<td>Lecture 11: Linear Model Selection: Principal Component Regression and Partial Least Squares <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch6slide.pdf"> [ slides ] </a> <br>
+
+	<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 6: Problems 1, 2, 3, 4, 7, 9; *Bonus question (optional): <a href="https://web.stanford.edu/~hastie/Papers/ESLII.pdf">ESL (Print 10)</a>, Exercise 3.27.
+
+	Deadline: Mar 20, 2018. Please submit your homework to the Email address above (statml.hw) before class, including source codes (or link) if necessary. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".	</li> </ul>
+
+	</td>
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+	
+
+<tr>	
+
+<td>03/15/2018, Thu </td>
+
+<td>Lecture 12: Moving beyond linearity I <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch7slide.pdf"> [ slides ] </a> <br>
+
+	<ul>[Collection of Project 1 Reports]:
+
+		<li> <a href="https://github.com/yuany-pku/2018_math4432/tree/master/project1">[ Project1@Github ]</a></li>
+
+	</ul>
+
+</td>
+
+<td>Prof. Can YANG</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>	
+
+<td>03/20/2018, Tue </td>
+
+<td>Lecture 13: Moving beyond linearity II <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch7slide.pdf"> [ slides ] </a> <br>
+
+	<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 7: exercise 1, 2, 3, 5, 6, 7, 10 in Section 7.9. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".</li> </ul>
+
+	</td>
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>	
+
+<td>03/22/2018, Thu </td>
+
+<td>Lecture 14: Tree-based Methods: Classification and Regression Trees (CART) <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch8slide.pdf"> [ slides ] </a> <br>
+
+	</td>
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+<tr>	
+
+<td>03/27/2018, Tue </td>
+
+<td>Lecture 15: Tree-based Methods: Bagging, Random Forests, and Boosting <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch8slide.pdf"> [ slides ] </a> <br>
+
+	<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 8: Exercises 3, 4, 7, 8, 9, 10 of Section 8.4. Deadline: Apr 10, 2018. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".
+
+	</li> 
+
+	</ul>
+
+	</td>
+
+	
+
+	<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>03/29/2018, Thu</td>
+
+<td>Lecture 16: Project 2: Midterm, due: April 12 11:59pm, 2018.  
+
+	<br>
+
+	<ul>[Mini-Project 2]
+
+		<li>Project description: <a href="https://github.com/yuany-pku/2018_math4432/blob/master/project2/project2.pdf">[ pdf ]</a>. </li>
+
+		<li>Collection of student reports <a href="https://github.com/yuany-pku/2018_math4432/tree/master/project2">[ Github ]</a></li>
+
+		<li>Doodle voting: please input your top 3 favorite reports, excluding your own team <a href="https://doodle.com/poll/s4dfy589hkkm2cri">[ Vote ]</a></li>
+
+	</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>
+
+<td>04/10/2018, Tue</td>
+
+<td>Lecture 17: Support Vector Machines I. <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch9slide.pdf"> [ slides ] </a> 
+
+
+
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+	
+
+<tr>
+
+<td>04/12/2018, Thu</td>
+
+<td>Lecture 18: Support Vector Machines II. <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch9slide.pdf"> [ slides ] </a> 
+
+	<br>
+
+	<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 9: Exercises 3, 5, 7 of Section 9.7. Deadline: Apr 19, 2018. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".
+
+	</li> 
+
+	</ul>
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+		
+
+<tr>
+
+<td>04/17/2018, Tue</td>
+
+<td>Lecture 19: Unsupervised Learning I: PCA. <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch10slide.pdf"> [ slides ] </a> 
+
+
+
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>
+
+<td>04/19/2018, Thu</td>
+
+<td>Lecture 20: Unsupervised Learning II: K-means and Hierarchical Clustering. <a href="https://github.com/yuany-pku/2018_math4432/blob/master/slides/Ch10slide.pdf"> [ slides ] </a> 
+
+	<br>
+
+	<ul>[Homework]:
+
+	<li> <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Seventh%20Printing.pdf">ISLR (Print7)</a>, Chapter 10: Exercises 1-3  and 10 of Section  10.7. Deadline: Apr 26, 2018. Mark on the head of your homework: 	
+
+"Math4432: Name - Student ID".
+
+	</li> 
+
+	</ul>
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+			
+
+<tr>
+
+<td>04/24/2018, Tue</td>
+
+<td>Lecture 21: An Introduction to Deep Learning I.  
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>04/26/2018, Thu</td>
+
+<td>Lecture 22: An Introduction to Deep Learning II. 
+
+	</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+		</tbody>
+
+</table>
+
+
+
+
+<!--
+
+<tr>
+
+<td>09/21/2015, Mon </td>
+
+<td>Lecture 02: Overview of Unsupervised Learning <br>
+
+<ul>[Reference]:
+
+<li> <a href="http://pan.baidu.com/s/1dDqEOiH"> [ slides in pdf ] </a> </li>
+
+</ul>
+
+<ul>[Homework 1]:
+
+<li> <a href="homework01.pdf">Homework 1 [pdf]</a>. Deadline: 09/28/2015, Monday.  Mark on the head of your homework: <I> Name - Student ID</I>. </li>
+
+</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+<td>09/28/2015, Mon </td>
+
+<td>Lecture 03: Linear Regression <br>
+
+<ul>[Reference]:
+
+<li> <a href="http://pan.baidu.com/s/1mgjF4xi"> [ slides in pdf ] </a> </li>
+
+</ul>
+
+<ul>[Homework 2]:
+
+<li> <a href="homework02.pdf">Homework 2 [pdf]</a>. Deadline: 10/12/2015, Monday.  Mark on the head of your homework: <I> Name - Student ID</I>. </li>
+
+</ul>
+
+<ul>[Mini Project 1]:
+
+<li> <a href="project1.pdf">Project 1 [pdf]</a>. Deadline: 10/12/2015, Monday.  Team work with no more than <I> FIVE (5) </I> collaborators. </li>
+
+</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+<tr>
+
+<td>10/12/2015, Mon </td>
+
+<td>Lecture 04: Linear Classification <br>
+
+<ul>[Discussion Session]:
+
+<li> Jiechao XIONG, <a href=""> A Dynamic Approach to Variable Selection </a> </li>
+
+</ul>
+
+<ul>[Reference]:
+
+<li> <a href="http://pan.baidu.com/s/1qWvJPX6"> [ slides in pdf ] </a> </li>
+
+</ul>
+
+<ul>[Homework 3]:
+
+<li> <a href="homework03.pdf">Homework 3 [pdf]</a>. Deadline: 10/19/2015, Monday.  Mark on the head of your homework: <I> Name - Student ID</I>. </li>
+
+</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+<tr>
+
+<td>10/19/2015, Mon </td>
+
+<td>Lecture 05: Basis Expansion and Regularization <br>
+
+<ul>[Reference]:
+
+<li> <a href="http://pan.baidu.com/s/1gdApBcn"> [ slides in pdf ] </a> </li>
+
+</ul>
+
+<ul>[Homework 4]:
+
+<li> <a href="homework04.pdf">Homework 4 [pdf]</a>. Deadline: 10/26/2015, Monday.  Mark on the head of your homework: <I> Name - Student ID</I>. </li>
+
+</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+<tr>
+
+<td>10/26/2015, Mon </td>
+
+<td>Lecture 06: Model Assessment and Selection <br>
+
+<ul>[Reference]:
+
+<li> <a href="http://pan.baidu.com/s/1qWKhncS"> [ slides in pdf ] </a> </li>
+
+</ul>
+
+<ul>[Homework 5]:
+
+<li> <a href="homework05.pdf">Homework 5 [pdf]</a>. Deadline: 11/02/2015, Monday.  Mark on the head of your homework: <I> Name - Student ID</I>. </li>
+
+</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+<tr>
+
+<td>11/02/2015, Mon </td>
+
+<td>Lecture 07: Kernel Smoothing Methods <br>
+
+<ul>[Discussion Session]:
+
+<li> Xuening ZHU, <a href=""> Network Vector Regression </a> </li>
+
+</ul>
+
+<ul>[Reference]:
+
+<li> <a href="http://pan.baidu.com/s/1i3CU4hZ"> [ slides in pdf ] </a> </li>
+
+</ul>
+
+<ul>[Homework 6]:
+
+<li> <a href="homework06.pdf">Homework 6 [pdf]</a>. Deadline: 11/09/2015, Monday.  Mark on the head of your homework: <I> Name - Student ID</I>. </li>
+
+</ul>
+
+</td>
+
+<td>Y.Y.</td>
+
+<td></td>
+
+</tr>
+
+
+
+<br>
+
+
+
+<h3><a name="data">Datasets (to-be-updated)</a></h3>
+
+
+
+<ul>
+
+<br>
+
+<li> [Animal Sleep Data] <a href="../data/sleep1.csv"> Animal species sleeping hours vs. other features </a>
+
+</li>
+
+<br>
+
+<li> [Anzhen Heart Data] <a href="../data/heartData_20140401.xlsx"> Heart Operation Effect Prediction</a>, provided by Dr. Jinwen Wang, Anzhen
+
+    Hospital
+
+</li>
+
+<br>
+
+<li> [Beer Data] <a href="../data/Beers_20140514.xlsx"> 877 beers dataset </a>, provided by Mr. Richard Sun, Shanghai
+
+</li>
+
+<br>
+
+<li> [Crime Data] <a href="../data/crime.xlsx"> Crime rates in 59 US cities during 1970-1992 </a>
+
+</li>
+
+<br>
+
+<li> [Real-Time-Bidding Algorithm Competition Data] <a href="http://contest.ipinyou.com/"> Contest Website </a>
+
+</li>
+
+<br>
+
+<li> <a name="hongloumeng">[&#32418;&#27004;&#26790;&#20154;&#29289;&#20107;&#20214;&#30697;&#38453;]</a> a 376-by-475 matrix (374-by-475 updated by WAN, Mengting)
+
+    for character-event appearance in A Dream of Red Mansion (Xueqin Cao) <a href="http://www.math.pku.edu.cn/teachers/yaoy/data/hongloumeng/HongLouMeng374.txt"> [374 Characters.txt
+
+    (for R/read.table)] </a> <a href="http://www.math.pku.edu.cn/teachers/yaoy/data/hongloumeng/HongLouMeng374.csv"> [HongLouMeng374.csv] </a>  <a
+
+    href="http://www.math.pku.edu.cn/teachers/yaoy/data/hongloumeng/HongLouMeng376.xls"> [HongLouMeng376.xls] </a> <a
+
+    href="http://www.math.pku.edu.cn/teachers/yaoy/data/hongloumeng/hongloumeng376.mat"> [.mat] </a>
+
+<a href="http://www.math.pku.edu.cn/teachers/yaoy/data/hongloumeng/readme.m"> [readme.m] </a>
+
+</li>
+
+<br>
+
+<li> <a name="data_xiyouji">[&#35199;&#28216;&#35760;]</a> characters-scene occurance matrices for 100 chapters <a href="../Fall2011/xiyouji/xiyouji.mat"> [data in matlab (302-by-408
+
+    matrix)] </a>
+
+<br>
+
+<table border="1" cellspacing="0">
+
+<tbody>
+
+<tr>
+
+<td align="left"><strong><a href="../data/xiyouji/chap001-005.xls">chap001-005</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap006-009.xls">chap006-009</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap010-013.xls">chap010-013</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap014-017.xls">chap014-017</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap018-021.xls">chap018-021</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap022-025.xls">chap022-025</a></strong></td>
+
+</tr>
+
+<tr>
+
+<td align="left"><strong><a href="../data/xiyouji/chap026-029.xls">chap026-029</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap030-033.xls">chap030-033</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap034-037.xls">chap034-037</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap038-041.xls">chap038-041</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap042-045.xls">chap042-045</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap046-049.xls">chap046-049</a></strong></td>
+
+</tr>
+
+<tr>
+
+<td align="left"><strong><a href="../data/xiyouji/chap050-053.xls">chap050-053</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap054-057.xls">chap054-057</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap058-061.xls">chap058-061</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap062-065.xls">chap062-065</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap066-069.xls">chap066-069</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap070-073.xls">chap070-073</a></strong></td>
+
+</tr>
+
+<tr>
+
+<td align="left"><strong><a href="../data/xiyouji/chap074-077.xls">chap074-077</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap078-081.xls">chap078-081</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap082-085.xls">chap082-085</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap086-088.xls">chap086-088</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap089-091.xls">chap089-091</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap092-094.xls">chap092-094</a></strong></td>
+
+</tr>
+
+<tr>
+
+<td align="left"><strong><a href="../data/xiyouji/chap095-097.xls">chap095-097</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap098-100.xls">chap098-100</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/chap001-100_txt.zip">All in TXT</a></strong></td>
+
+<td align="left"><strong><a href="../data/xiyouji/readData.m">readData.m</a></strong></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</li>
+
+<br>
+
+<li> <a name="keywords">[Keywords Pricing]</a> Keywords and profit index in paid search advertising, by Hansheng Wang (Guanghua, PKU). <a
+
+    <a href="http://www.math.pku.edu.cn/teachers/yaoy/math2010_spring/Keyword/readme.txt"> [readme.txt] </a>  
+
+    <a href="../data/SE.csv"> [data in csv] </a>
+
+</li>
+
+<br>
+
+<li> [Radon Data] <a href="../data/radon.csv"> Radon measurements of 12,687 houses in US </a>
+
+</li>
+
+<br>
+
+<li> [Wells Data] <a href="../data/wells.csv"> Switch unsafe wells for arsenic pollution in Bangladesh </a>
+
+</li>
+
+<br>
+
+<li> to-be-done...
+
+</li>
+
+</ul>
+
+-->
+
+	
+
+<hr>
+
+
+
+
+<address>
+
+by <a href="http://yao-lab.github.io/">YAO, Yuan</a>.
+
+</address>
+
+
+
+
+</body>
+
+</html>
